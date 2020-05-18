@@ -1,0 +1,28 @@
+#container{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#gauge{
+    background: red;
+    height: 15px;
+    width: 1px;
+    position: absolute;
+    top:0px;
+}
+#maxGauge{
+    background: gray;
+    width: 100px;
+    height: 15px;
+}
+
+#percentage{
+    width: 100px;
+    height: 15px;
+    position: relative;
+}
+
+#download{
+    display: inline-block;
+}

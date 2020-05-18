@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">    
+</head>
+<body>
+    <input type="file" id="file"><br>
+    変換先:<select name="convertType" id="convertType">
+        <option value="emoji">絵文字選択可、色なし</option>
+        <option value="color">絵文字選択不可、色あり</option>
+    </select><br>
+    閾値:<select name="threshold" id="threshold">
+            <option value="50 ">50 </option>
+            <option value="60 ">60 </option>
+            <option value="70 ">70 </option>
+            <option value="80 ">80 </option>
+            <option value="90 ">90 </option>
+            <option value="100">100</option>
+            <option value="110">110</option>
+            <option value="120">120</option>
+            <option value="130">130</option>
+            <option value="140">140</option>
+            <option value="150">150</option>
+            <option value="160">160</option>
+            <option value="170">170</option>
+            <option value="180">180</option>
+            <option value="190">190</option>
+            <option value="200">200</option>
+            <option value="210">210</option>
+            <option value="220">220</option>
+            <option value="230">230</option>
+        </select><br>
+        <font size="1px" color="gray">(上げるほどクッキリするが上げすぎると潰れてしまう)</font><br>
+    フォントサイズ:<select name="fontSize" id="fontSize">
+        <option value="0.1">0.1</option>
+        <option value="0.2">0.2</option>
+        <option value="0.3">0.3</option>
+        <option value="0.4">0.4</option>
+        <option value="0.5">0.5</option>
+        <option value="0.6">0.6</option>
+        <option value="0.7">0.7</option>
+        <option value="0.8">0.8</option>
+        <option value="0.9">0.9</option>
+        <option value="1  ">1  </option>
+        <option value="2  ">2  </option>
+        <option value="3  ">3  </option>
+        <option value="4  ">4  </option>
+    </select><br>
+    <font size="1px" color="gray">(低くしておけばいいと思う)</font><br>
+    <div id="emojiSelect" style="display: normal">
+        <input type="text" id="emoji1" value="🐔" style="width: 20px"><input type="text" id="emoji2" value="🦃" style="width: 20px"><br>
+    </div>
+    <canvas id="canvas"></canvas><br>
+    <div id="scaleArea"></div><br>
+    <a id="download" style="display: none;">download</a><br>
+    <div id="container">
+        <div id="convertedTextArea"></div>
+    </div>
+    <script src="main.js"></script>    
+</body>
+</html>
